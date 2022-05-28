@@ -1,4 +1,5 @@
 .tabs{
+    position: relative;
     display:flex;
     align-items: center;
     width: 100%;
@@ -6,8 +7,30 @@
     background-image: url($pic09);
     fill: transparent linear-gradient(270deg, #6696E2 0%, #E27866 100%) 0% 0% no-repeat padding-box;
     opacity: 0.8;
+    cursor:pointer;
     
 }
+
+
+.tab{
+    display: flex;
+    align-items: center;
+    max-width: 920px;
+    max-height: fit-content;
+    gap: 40px;
+    transform: translateX(10px) rotateY(90deg);
+    opacity: 0;
+    transition: 1s;
+}
+
+
+
+
+.tabAnimation {
+    opacity: 1;
+    transform: translateX(0) rotate(0);
+}
+
         
 .btn button{
     display:flex;
@@ -20,6 +43,7 @@
     border-color:#E27866;
     margin-left: 151px;
     margin-top: 20px;
+    cursor: pointer;
     
     
     
@@ -63,21 +87,37 @@
 }
 
 .pictures{
+    
     display: flex;
     flex-wrap: wrap;
     gap:20px;
     max-width: 362px;
     max-height: 370px;
-    margin-left: 40px;
+
+   
+   
     
 
 
   .section2_img:nth-of-type(1){
+        display: flex;
+        justify-content: center;
+        align-items: center;
         width: 168px;
         height: 168px;
         background-image: url($pic11);
         background-position: center;
         background-size: cover;
+
+    span{   
+            max-width: 78px;
+            max-height: 24px;
+            font: normal normal 600 20px/24px Montserrat;
+            letter-spacing: 0px;
+            color: #FFFFFF;
+            opacity: 1;
+    }    
+        
 
   
 }
@@ -100,4 +140,29 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+}
+
+.section2_img_2{
+        width: 168px;
+        height: 150px;
+        margin-top: 5px;
+        margin-left:5px;
+        background-image: url($pic14);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+
+
+}
+
+.section2_img_3 {
+    width: 168px;
+    height: 150px;
+    margin-top: 5px;
+    background-image: url($pic15);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }

@@ -2,16 +2,19 @@ var tabs = document.getElementsByClassName("tab")
 var buttons = document.getElementsByTagName("button")
 var one = document.getElementById("one")
 var two = document.getElementById("two")
+var three = document.getElementById("three")
 
 
 
-// Paslepia visus tabus pradžioje
-for (var x of tabs) {
-    x.style.display = "none"
-}
+
+(document).ready(function(){
+    activaTab('one');
+});
+
+
 
 function changeHeader(event, id){
-    // Paslepia ir nuima animaciją tabams
+    
     for (var x of tabs) {
         x.style.display = "none"
         x.classList.remove("tabAnimation")
@@ -19,22 +22,15 @@ function changeHeader(event, id){
 
    
 
-    // Parodo konkretų tab pagal id
-    document.getElementById(id).style.display = "block"
+    
+    document.getElementById(id).style.display = "flex"
 
 
 
-    // Prideda animaciją po 100ms
+    
     setTimeout(function(){
         document.getElementById(id).classList.add("tabAnimation")
-    }, 100)
+    }, 130)
 
    
-    // Pašalina mygtukams klasę
-    for (var x of buttons) {
-        x.classList.remove("selected")
-    }
-
-    // Prideda konkrečiam mygtukui klasę
-    event.currentTarget.classList.add("selected")
 }

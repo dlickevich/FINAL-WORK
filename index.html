@@ -6,11 +6,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />    
     <link rel="stylesheet" href="app/css/style.css">
     <title>Praktinis</title>
 
 <body>
-  <!-- header -->
+<!-- header -->
  <header>
   <div class="img"></div>
     <nav>
@@ -20,6 +21,7 @@
         <a href="#">About</a>
       </nav> 
   </header>  
+
 <!-- section1 -->
 <section class="sec_1">
 <div class="left">
@@ -56,6 +58,8 @@
     <div class="img_5"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M25.57 176.1C12.41 175.4 .9117 185.2 .0523 198.4s9.173 24.65 22.39 25.5c120.1 7.875 225.7 112.7 233.6 233.6C256.9 470.3 267.4 480 279.1 480c.5313 0 1.062-.0313 1.594-.0625c13.22-.8438 23.25-12.28 22.39-25.5C294.6 310.3 169.7 185.4 25.57 176.1zM32 32C14.33 32 0 46.31 0 64s14.33 32 32 32c194.1 0 352 157.9 352 352c0 17.69 14.33 32 32 32s32-14.31 32-32C448 218.6 261.4 32 32 32zM63.1 351.9C28.63 351.9 0 380.6 0 416s28.63 64 63.1 64s64.08-28.62 64.08-64S99.37 351.9 63.1 351.9z"/></svg>
   </div>
 </article>
+
+
 <!-- section2 -->
 <section class="tabs">
  <div class="btn">
@@ -63,19 +67,51 @@
   <button onclick="changeHeader(event, 'two')"><span>APPLY</span></button>
   <button onclick="changeHeader(event, 'three')"><span>RECEIVE</span></button>
   </div>
- <div class=text>
+  
+ <div id="one" class="tab">
+   <div class="text">
    <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
    <br>
    <h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. 
    <br>
   <br>
    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</h5>
- </div>
+   </div>
  <div class="pictures">
-  <div class="section2_img"></div>
+  <div class="section2_img"><span>Explore</span></div>
   <div class="section2_img"></div>
   <div class="section2_img"></div>
 </div>
+ </div>
+ <div id="two" class="tab">
+   <div class="text">
+   <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+   <br>
+   <h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. 
+   </h5>
+   </div>
+ <div class="pictures">
+  <div class="section2_img_2"></div>
+  <div class="section2_img"></div>
+  <div class="section2_img"></div>
+</div>
+ </div>
+ <div id="three" class="tab">
+   <div class="text">
+   <h2>Tabs with soft transitioning effect. Explained propriety of out perpetual his you.</h2>
+   <br>
+   <h5> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar tempor. Cum sociis natoque penatibus et magnis dis parturient montes. 
+   <br>
+  <br>
+   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</h5>
+   </div>
+ <div class="pictures">
+  <div class="section2_img_3"></div>
+  <div class="section2_img"></div>
+  <div class="section2_img"></div>
+</div>
+ </div>
+
 
 </section>
 
@@ -93,7 +129,7 @@
    </div>
     
    <div class="eye">
-     <div class="circle"></div>
+     <div class="circle"><i class="far fa-eye"></i></div>
      <div class="text">
        <h4>Title</h4>
        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.</h5>
@@ -101,7 +137,7 @@
    </div>
 
    <div class="eye">
-     <div class="circle"></div>
+     <div class="circle"><i class='far fa-comment'></i></div>
      <div class="text">
        <h4>Title</h4>
        <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet. Proin gravida dolor sit amet lacus accumsan et viverra justo commodo.</h5>
