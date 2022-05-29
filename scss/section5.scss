@@ -1,6 +1,7 @@
 .sec_5{
 max-width: 100%;
 max-height: 883px;
+background-color: rgb(103, 150, 226);
 
 }
 
@@ -24,7 +25,14 @@ max-height: 883px;
   
 }
 
-.plan h3 {
+.plan h3{
+    display:flex;
+    justify-content: center ;
+    align-items: center;
+    text-align: center;
+    font: normal normal normal 14px/24px Montserrat;
+    letter-spacing: 0px;
+    color: #FFFFFF;
     min-height: 51px;
     background: transparent url($pic22) 0% 0% no-repeat padding-box;
     opacity: 1;
@@ -43,6 +51,50 @@ max-height: 883px;
         color: #FFFFFF;
         opacity: 1;
 
+     
       
 }
+.price span{
+    margin-top: 30px;
+    font-size: 0.5em;
+}
 
+.spliter_1{
+     height: 6px;
+    background: transparent url($pic21) 0% 0% no-repeat padding-box;
+    opacity: 1;
+    
+
+}
+.spliter_2 h2{
+        min-height: 40px;
+        background: transparent url($pic23) 0% 0% no-repeat padding-box;
+        opacity: 1;
+        font: normal normal normal 14px/24px Montserrat;
+        letter-spacing: 0px;
+         color: #FFFFFF;
+         opacity: 1;
+        
+}
+
+.plan ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: #FFFFFF;
+    
+}
+
+.plan ul li {
+        height: 18px;
+        text-align: center;
+        font: normal normal normal 14px/24px Montserrat;
+        letter-spacing: 0px;
+        color: #86878B;
+        opacity: 1;
+        padding: 10px;
+}
+
+.plan ul li:last-child {
+    border-bottom: 0;
+}
