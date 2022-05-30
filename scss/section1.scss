@@ -3,6 +3,7 @@
    
     display: flex;
     justify-content: space-between;
+    gap:30px;
     min-width: 100%;
     min-height:639px;
     background-image:linear-gradient(rgba(0, 0, 0, 0.420), rgba(0, 0, 0, 0.10)), url($pic02);
@@ -81,7 +82,7 @@ form{
     flex-direction: column;
     justify-content: space-around;
     margin-top: 140px;
-    margin-right: 148px;
+    margin-right: 120px;
     max-width: 360px;
     max-height: 425px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -135,9 +136,17 @@ article {
    
 
 }
+
+.icons{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+}
+    
 .img_1{
-    width: 16px;
-    height: 30px;
+    min-width: 16px;
+    min-height: 30px;
     background: transparent url($pic04) 0% 0% no-repeat padding-box;
     background-repeat: no-repeat;
     background-size: contain;
@@ -146,8 +155,8 @@ article {
 
 }
 .img_2{
-    width: 30px;
-    height: 30px;
+    min-width: 30px;
+    min-height: 30px;
     background: transparent url($pic05) 0% 0% no-repeat padding-box;
     background-repeat: no-repeat;
     background-size: contain;
@@ -156,8 +165,8 @@ article {
 
 }
 .img_3{
-    width: 36px;
-    height: 30px;
+    min-width: 36px;
+    min-height: 30px;
     background: transparent url($pic06) 0% 0% no-repeat padding-box;
     background-repeat: no-repeat;
     background-size: contain;
@@ -166,8 +175,8 @@ article {
 
 }
 .img_4{
-    width: 24px;
-    height: 30px;
+    min-width: 24px;
+    min-height: 30px;
     background: transparent url($pic07) 0% 0% no-repeat padding-box;
     background-repeat: no-repeat;
     background-size: contain;
@@ -176,11 +185,13 @@ article {
 
 }
 .img_5{
-    width: 24px;
-    height: 30px;
+    display:flex;
+    min-width: 24px;
+    max-width: 24px;
+    min-height: 30px;
     margin-top: 38px;
     margin-right: 158px;
-    
+}
 
 svg {background: transparent 0% 0% no-repeat padding-box;
   fill: #E27866;
@@ -192,4 +203,9 @@ svg {background: transparent 0% 0% no-repeat padding-box;
 
 
 }
-}
+
+
+
+
+
+    

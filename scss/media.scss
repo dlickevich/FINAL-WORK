@@ -1,0 +1,162 @@
+//header
+@media screen and (max-width: 950px) {
+    .img {
+        margin-left: 20px;
+    }
+
+    nav {
+        margin-right: 20px;
+    }
+
+}
+
+//section1
+@media screen and (max-width: 950px) {
+    .sec_1 {
+        justify-content: space-around;
+        gap: 30px;
+    }
+
+    form {
+        margin-right: 50px;
+    }
+
+    
+   article{
+    flex-direction: column;
+   }
+
+   .icons{
+      display:flex;
+      margin-bottom: 20px;
+  
+    
+   }
+   
+       
+   
+   article .text{
+       margin: auto;
+   }
+
+}
+@media screen and (max-width: 750px) {
+    .sec_1 {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin:0px;
+       
+
+    }
+
+    .sec_1 form {
+        min-height: 425px;
+        margin-top: 40px;
+        margin:auto;
+    }
+         .sec_1 form {
+             margin-bottom: 30px;
+         }
+        .sec_1 .left h2 {
+            margin: auto;
+            
+            text-align: center;
+    
+        }
+    
+        .sec_1 .left h3 {
+            margin: auto;
+            
+            text-align: center;
+        }
+    
+        .sec_1 .left svg {
+            margin-left: none;
+        }
+    
+        .sec_1 .left .img {
+            margin: auto;
+        }
+        .sec_1 .left button {
+            margin: auto;
+            margin-top: 50px;
+        }
+
+}
+
+@media screen and (max-width: 650px) {
+    
+    .sec_1 .left h2{
+        margin:auto;
+       
+       text-align: center;
+       
+    }
+    .sec_1 .left h3{
+        margin:auto;
+       
+        text-align: center;
+    }
+    .sec_1 .left svg{
+        margin-left:none;
+    }
+    .sec_1 .left .img{
+        margin: auto;
+    }
+        .sec_1 form {
+            margin-bottom: 30px;
+        }
+    .icons{
+        margin-left: 120px;
+        
+        
+    }
+        
+    }
+@media screen and (max-width: 430px) {
+    
+    .sec_1 .left h2{
+        margin:auto;
+       margin-left: 10px;
+       text-align: center;
+       font-size:large;
+       letter-spacing: none;
+    }
+    .sec_1 .left h3{
+        margin:auto;
+        padding: 10px;
+        font-size: smaller;
+        text-align: center;
+        letter-spacing: none;
+    }
+    .sec_1 .left svg{
+        margin-left:none;
+    }
+    .sec_1 .left .img{
+        margin: auto;
+    }
+    .sec_1 .left svg{
+        margin-left: 100px;
+    }
+    
+    
+    .sec_1 form{
+        margin-bottom: 30px;
+    }
+    article .text{
+       padding: 10px;
+    }
+}
+    
+//section2{
+@media screen and (max-width: 430px) {
+    .tabs{
+        flex-direction: column;
+    }
+    .btn button{
+        margin-left:20px;
+        flex-direction: row;
+    }
+}
